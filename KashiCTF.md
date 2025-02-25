@@ -48,7 +48,7 @@ And after osint in some video on youtube, using google map and brute the coordin
 
 ### Who am I ??
 ![image](https://github.com/user-attachments/assets/2fce9de0-a332-4a75-8e4e-f84bda76c94f)
-I ask chatGPT then I got the flag :)))))))
+I asked chatGPT then I got the flag:)))))))
 **Flag: KashiCTF{Endre_Bajcsy_Zsilinszky}**
 
 # Forensics
@@ -58,20 +58,20 @@ Based on the challenge hint: "Every image tells a story, but some stories are me
 ![image](https://hackmd.io/_uploads/rk6g8-o5Jl.png)
 **Flag :  KashiCTF{DF1R_g03555_Brrrr}**
 ### Corruption
-The file given is a corrupted file so i use HxD to read it
-Use search tool you can find the real flag is the second one
+The file given is a corrupted file so I used HxD to read it
+Use the search tool, and you can find the real flag is the second one
 ![image](https://hackmd.io/_uploads/SJVf8Wj5yx.png)
 **Flag: KashiCTF{FSCK_mE_B1T_by_b1t_Byt3_by_byT3}**
 ### Restaurant
 There's some hint in the challenge that's "Maybe in the end they may give me something real. (Wrap the text in KashiCTF{})"
-So i opened the image and found there's something in the end
+So I opened the image and found there was something in the end
 ![image](https://hackmd.io/_uploads/S10GLWs9Jl.png)
-When i search on the internet for the image that's a bacon tomato pasta(really???), which related to Bacon cipher with sussy ABABABAB in the footer
-After decrypting the text and we got this
+When i searched on the internet for the image that's a bacon tomato pasta(really???), which related to Bacon cipher with sussy ABABABAB in the footer
+After decrypting the text we got this
 ![image](https://hackmd.io/_uploads/r1nQLWscJx.png)
 **Flag: KashiCTF{THEYWEREREALLLLYCOOKING}**
 ### Look at Me
-This problem use SilentEye tool to solve.
+This problem uses the SilentEye tool to solve.
 ![image](https://hackmd.io/_uploads/Sk3E8Wscyx.png)
 **Flag: KashiCTF{K33p_1t_re4l}**
 ### Do Not Redeem #1
@@ -84,19 +84,19 @@ Then browse the sms data in sms table and find for OTP sms
 ### Do Not Redeem #2
 In the first problem, we can see the timestamp of the OTP sms is 1740251608654
 ![image](https://hackmd.io/_uploads/SkYPU-o9Jg.png)
-So it gonna be 02:13(in my time display) and we can find there's only 5 package updated after that sussy OTP
+So it gonna be 02:13(in my time display) and we can find there are only 5 packages updated after that sussy OTP
 ![image](https://hackmd.io/_uploads/r14_8Wo5ke.png)
-Then i give it a try to take a closer look on calendar(41kb really????) and that package got changed before the Amazon package so that's getting more sussy
-So i submited the flag and it's correct.
+Then I gave it a try to take a closer look on the calendar(41kb really????) and that package got changed before the Amazon package so that's getting more sussy
+So I submitted the flag and it's correct.
 **Flag: KashiCTF{com.google.calendar.android}**
 ### Stego Gambit
-This problem actually easy but it wasted me alot of time
+This problem was easy but it wasted a lot of time
 So here's the given image from the chall
 ![image](https://hackmd.io/_uploads/SJlq8bs5yx.png)
-So first i import the picture into HxD and found something in the header 
+So first I imported the picture into HxD and found something in the header 
 ![image](https://hackmd.io/_uploads/r1jiL-oqkx.png)
 ```Use the moves as a key to the flag, separated by _```
-To find the moves, we just need to make the similar board on lichess and just leave the bot playing it(actually if white move first that's impossible because it's already check)
+To find the moves, we just need to make a similar board on lichess and leave the bot playing it(actually if white moves first that's impossible because it's already checked)
 ![image](https://hackmd.io/_uploads/HyU3U-o5Jx.png)
 So 2 moves gonna be ```1. Bh1 Kxa2 2. Qg2#```
 **Key: Bh1Kxa2_Qg2#**(i keep spamming Bh1_Kxa2_Qg2# freak)
@@ -224,7 +224,7 @@ func _physics_process(delta):
 
 ```
 So I try to submit this flag and ez win :v: 
-Another way it can also be solved by just find keyword "KashiCTF" in the cmd line:
+Another way it can also be solved by find keyword "KashiCTF" in the cmd line:
 ![image](https://hackmd.io/_uploads/r1flPZjqke.png)
 
 
@@ -246,14 +246,14 @@ Dig through the buried artifacts, extract what is unseen, and seek the whispers 
 Only by unearthing the lost fragments, those.
 ```
 
-Then i use tool Assetripper and open folder **CTF_Data** 
+Then I used tool Assetripper and opened folder **CTF_Data** 
 ![image](https://hackmd.io/_uploads/ryqW_-s51g.png)
 
-Then i see a very sus audio 
+Then I see a very sus audio 
 ![image](http![image](https://hackmd.io/_uploads/B1Fz_Wiqyl.png)
 s://hackmd.io/_uploads/Sy7VUg951g.png)
 
-Download it then open it in audacity
+Download it then open it in Audacity
 ![image](https://hackmd.io/_uploads/rJU7ubj9yg.png)
 **KashiCTF{1t_Wa5_Ju5t_4_Tutori4l_RIP}**
 # Pwn	
@@ -263,7 +263,7 @@ Download it then open it in audacity
 ![image](https://hackmd.io/_uploads/rkLqDbsqyl.png)
 
 ![image](https://hackmd.io/_uploads/rykjvWoqke.png)
-What if we jump to main+1 many time ? Is rsp will be subtracted ?. I realized that we can control **rsp**.
+What if we jump to main+1 many time? Is rsp will be subtracted? I realized that we can control **rsp**.
 Following this flow, I just brute force with luck and it was right 
 ```python3 
 from pwn import * 
@@ -456,7 +456,7 @@ This is Vigenere Cipher with key = DamnKeys
 ## Game 2 - Wait
 ![image](https://hackmd.io/_uploads/B1kP_bo9Jx.png)
 
-Run **wait.exe**. We need to spend time waiting for the flag. But i tried to change the time in my laptop to 2026 and I got flag.
+Run **wait.exe**. We need to spend time waiting for the flag. But I tried to change the time on my laptop to 2026 and I got flag.
 ![image](https://hackmd.io/_uploads/Bkguu-sqyx.png)
 
 **Flag: KashiCTF{Ch4kr4_Vyuh}** 
@@ -491,17 +491,17 @@ I sat waiting near the door of my room
 Resting my head against it,
 Facing the porch through which you would come out.
 ```
-The poem that author give to player.
-As the name of the challenge we use **stegsnow** tool.
+The poem that the author gives to the player.
+As the name of the challenge, we use **stegsnow** tool.
 ![image](https://hackmd.io/_uploads/HkCK_Zi51e.png)
 ![image](https://hackmd.io/_uploads/ByW9dZjqke.png)
 The password is his friend's name: Aakash
 Then we get: https://pastebin.com/HVQfa14Z
-This is cow descript
+This is a cow-descript
 ![image](https://hackmd.io/_uploads/S1Uj_bscJl.png)
 **Flag: KashiCTF{Love_Hurts_5734b5f}**
 
-## Broken ?
+## Broken?
 ```python=
 import hashlib
 
