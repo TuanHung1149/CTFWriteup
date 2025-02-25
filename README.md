@@ -34,9 +34,10 @@
 
 ### Old dinner
 The popular diner in the USA that serves Coke floats is Lexington Candy Shop, which is popular on social media. At first, our team used brute force to determine the amount of money they paid with a gap of 0.05, and luckily, we got the flag.Then I did some research on the problem when the author said that we needed to find some bills I found a review on TripAdvisor 
-![image](https://hackmd.io/_uploads/SkHqsoqqJe.png)
+![image](https://hackmd.io/_uploads/By5oS-oq1e.png)
 And you can see the word "Very American experience" is a hint of the challs so it's clear enough that the the answer will be in the bill's picture
-![image](https://hackmd.io/_uploads/rkbqkcYqyl.png)
+
+![image](https://hackmd.io/_uploads/B1s1Ibj5ke.png)
 **Flag: KashiCTF{Lexington_Candy_Shop_41.65}**
 ### Kings
 At first i found that's the Tutankhamun's meteoric iron dagger and that's kinda not related. Then i think about popular the extinct bird that's dodo bird. I actually found 2 artist that draw dodo bird that's Ustad Mansur and Roelant Savery(already try but failed)
@@ -47,54 +48,54 @@ But it's actually more match with Ustad Mansur information when he was in the Mu
 ### Memories Bring Back You
 Using FTK imager to open the file and found some images, and audio files.
 Based on the challenge hint: "Every image tells a story, but some stories are meant to stay hidden." I found the flag inside image_421.jpg
-![image](https://hackmd.io/_uploads/HJ_ypFFqJx.jpg)
+![image](https://hackmd.io/_uploads/rk6g8-o5Jl.png)
 **Flag :  KashiCTF{DF1R_g03555_Brrrr}**
 ### Corruption
 The file given is a corrupted file so i use HxD to read it
 Use search tool you can find the real flag is the second one
-![image](https://hackmd.io/_uploads/H12__jYqJl.png)
-![image](https://hackmd.io/_uploads/BJxi_otqyl.png)
+![image](https://hackmd.io/_uploads/Hy9bIbjckg.png)
+![image](https://hackmd.io/_uploads/SJVf8Wj5yx.png)
 **Flag: KashiCTF{FSCK_mE_B1T_by_b1t_Byt3_by_byT3}**
 ### Restaurant
 There's some hint in the challenge that's "Maybe in the end they may give me something real. (Wrap the text in KashiCTF{})"
 So i opened the image and found there's something in the end
-![image](https://hackmd.io/_uploads/BkihYsF9kg.png)
+![image](https://hackmd.io/_uploads/S10GLWs9Jl.png)
 When i search on the internet for the image that's a bacon tomato pasta(really???), which related to Bacon cipher with sussy ABABABAB in the footer
 After decrypting the text and we got this
-![image](https://hackmd.io/_uploads/rJP8qsKcJe.png)
+![image](https://hackmd.io/_uploads/r1nQLWscJx.png)
 **Flag: KashiCTF{THEYWEREREALLLLYCOOKING}**
 ### Look at Me
 This problem use SilentEye tool to solve.
-![image](https://hackmd.io/_uploads/HJ33SG551x.png)
+![image](https://hackmd.io/_uploads/Sk3E8Wscyx.png)
 **Flag: KashiCTF{K33p_1t_re4l}**
 ### Do Not Redeem #1
 The sms database will be in the file ```/data/data/com.android.providers.telephony/databases/mmssms.db```
 Open mmssms.db file with DB browser and we got this 
-![image](https://hackmd.io/_uploads/SkiTyX5qJg.png)
+![image](https://hackmd.io/_uploads/HkurUZj5yl.png)
 Then browse the sms data in sms table and find for OTP sms
-![image](https://hackmd.io/_uploads/HySbem9qkg.png)
-**Flag: KashiCTF{839216_1740251608654}
+![image](https://hackmd.io/_uploads/SJUI8-s5yx.png)
+**Flag: KashiCTF{839216_1740251608654}**
 ### Do Not Redeem #2
 In the first problem, we can see the timestamp of the OTP sms is 1740251608654
-![image](https://hackmd.io/_uploads/BJBBhq5qkg.png)
+![image](https://hackmd.io/_uploads/SkYPU-o9Jg.png)
 So it gonna be 02:13(in my time display) and we can find there's only 5 package updated after that sussy OTP
-![image](https://hackmd.io/_uploads/B1dqhqcq1x.png)
+![image](https://hackmd.io/_uploads/r14_8Wo5ke.png)
 Then i give it a try to take a closer look on calendar(41kb really????) and that package got changed before the Amazon package so that's getting more sussy
 So i submited the flag and it's correct.
 **Flag: KashiCTF{com.google.calendar.android}**
 ### Stego Gambit
 This problem actually easy but it wasted me alot of time
 So here's the given image from the chall
-![chall (3)](https://hackmd.io/_uploads/BJzgC9qqkx.jpg)
+![image](https://hackmd.io/_uploads/SJlq8bs5yx.png)
 So first i import the picture into HxD and found something in the header 
-![image](https://hackmd.io/_uploads/SJFSkjq91e.png)
+![image](https://hackmd.io/_uploads/r1jiL-oqkx.png)
 ```Use the moves as a key to the flag, separated by _```
 To find the moves, we just need to make the similar board on lichess and just leave the bot playing it(actually if white move first that's impossible because it's already check)
-![image](https://hackmd.io/_uploads/HJtUA5c9ye.png)
+![image](https://hackmd.io/_uploads/HyU3U-o5Jx.png)
 So 2 moves gonna be ```1. Bh1 Kxa2 2. Qg2#```
 **Key: Bh1Kxa2_Qg2#**(i keep spamming Bh1_Kxa2_Qg2# freak)
 With that pro key moment we gonna use steghide to extract something in image
-![image](https://hackmd.io/_uploads/rJoIxs99yx.png)
+![image](https://hackmd.io/_uploads/SyW68bocJg.png)
 **Flag: KashiCTF{573g0_g4m617_4cc3p73d}**
 # Web
 ### SuperFastApi
@@ -153,13 +154,14 @@ print(res.json()[0].get('email').replace(',',''))
 ## Game 1 - Untitled Game
 
 This challange is about godot game
-![image](https://hackmd.io/_uploads/ryQKFtKc1l.png)
 
-![image](https://hackmd.io/_uploads/HyscKFYqJl.png)
+![image](https://hackmd.io/_uploads/ryMRLZo9yl.png)
+
+![image](https://hackmd.io/_uploads/HJCC8Zsckx.png)
 
 Extract this Challange.exe file by GDRETools i have:
 
-![image](https://hackmd.io/_uploads/r1PbAYtckx.png)
+![image](https://hackmd.io/_uploads/HyIyDbjqyx.png)
 
 In player.gd:
 
@@ -217,7 +219,7 @@ func _physics_process(delta):
 ```
 So I try to submit this flag and ez win :v: 
 Another way it can also be solved by just find keyword "KashiCTF" in the cmd line:
-![image](https://hackmd.io/_uploads/SkGNyqY51l.png)
+![image](https://hackmd.io/_uploads/r1flPZjqke.png)
 
 
 **Flag: KashiCTF{N07_1N_7H3_G4M3}**
@@ -226,10 +228,10 @@ Another way it can also be solved by just find keyword "KashiCTF" in the cmd lin
 ## Game 3 - CatSeabank
 
 In this challenge we **just** play game.
-![image](https://hackmd.io/_uploads/HJfnzg55yl.png)
+![image](https://hackmd.io/_uploads/rys3Pbj5Jx.png)
 Use this bug to have a lot of money 
 
-![image](https://hackmd.io/_uploads/Byl0Gx9ckx.png)
+![image](https://hackmd.io/_uploads/SyYpPZi5kg.png)
 Then pay him 2000 and then you can hear a sound like
 ```
 The echoes of truth lie not in the open, but within the very fabric of this world.
@@ -239,26 +241,24 @@ Only by unearthing the lost fragments, those.
 ```
 
 Then i use tool Assetripper and open folder **CTF_Data** 
-![image](https://hackmd.io/_uploads/SJAv7lq9kx.png)
+![image](https://hackmd.io/_uploads/ryqW_-s51g.png)
 
 Then i see a very sus audio 
-![image](https://hackmd.io/_uploads/Sy7VUg951g.png)
+![image](http![image](https://hackmd.io/_uploads/B1Fz_Wiqyl.png)
+s://hackmd.io/_uploads/Sy7VUg951g.png)
 
 Download it then open it in audacity
-![image](https://hackmd.io/_uploads/H1hgl-9cyx.png)
+![image](https://hackmd.io/_uploads/rJU7ubj9yg.png)
 **KashiCTF{1t_Wa5_Ju5t_4_Tutori4l_RIP}**
 # Pwn	
 
 ## leap_of_faith
 
-![image](https://hackmd.io/_uploads/SylmnOFY91x.png)
+![image](https://hackmd.io/_uploads/rkLqDbsqyl.png)
 
-![image](https://hackmd.io/_uploads/ryulNz99Je.png)
-What happens if we jump to main+1 multiple times? Will rsp be decremented?
-I realized that we can control rsp, but I don't know what to do with this. So, I tried brute-forcing by jumping to main multiple times, then I used ret2win.
-
-
-
+![image](https://hackmd.io/_uploads/rykjvWoqke.png)
+What if we jump to main+1 many time ? Is rsp will be subtracted ?. I realized that we can control **rsp**.
+Following this flow, I just brute force with luck and it was right 
 ```python3 
 from pwn import * 
 
@@ -276,13 +276,12 @@ p.sendlineafter(b': ', b'4011BA')
 
 p.interactive()
 ```
-**Flag: KashiCTF{m4r10_15_fu_w17H_C_qjHbCVGz}**
 
 ## The Troll Zone
 
 Checksec of the challenge
 
-![image](https://hackmd.io/_uploads/r1QGdYYqyx.png)
+![image](https://hackmd.io/_uploads/BkVKw-j5kg.png)
 
 
 After brute force dump value from the stack then i found the 17th value from the stack is the address of any function in libc
@@ -403,7 +402,7 @@ So basically $G$ is the generator of the elliptic curve $E(p,a,b)$. So if we sen
 
 Step 1: Send requests:
 
-![image](https://hackmd.io/_uploads/H1LTRoK9ke.png)
+![image](https://hackmd.io/_uploads/Bkt-D-jckg.png)
 
 
 Step 2: Decrypt:
@@ -439,20 +438,20 @@ Hint: DamnKeys
 This is Vigenere Cipher with key = DamnKeys
 
 
-![image](https://hackmd.io/_uploads/S1Gyl2t5kx.png)
+![image](https://hackmd.io/_uploads/S1Fzv-iqJl.png)
 ```Flag: KashiCTF{I_r3V3Al3d_my_Pub1Ic_K3y_4nd_4ll_1_g0t_w4s_th1s_L0usy_Fl4G_021P8gil}```
 # Misc
 
 ## FinalGame?
 
-![image](https://hackmd.io/_uploads/HJnx9Wc51g.png)
+![image](https://hackmd.io/_uploads/H1XLuWsq1l.png)
 **Flag: KashiCTF{Will_This_Be_My_Last_Game_e94fab41}**
 
 ## Game 2 - Wait
-![image](https://hackmd.io/_uploads/rJGlk9Y9ke.png)
+![image](https://hackmd.io/_uploads/B1kP_bo9Jx.png)
 
 Run **wait.exe**. We need to spend time waiting for the flag. But i tried to change the time in my laptop to 2026 and I got flag.
-![image](https://hackmd.io/_uploads/HkdUycK51l.png)
+![image](https://hackmd.io/_uploads/Bkguu-sqyx.png)
 
 **Flag: KashiCTF{Ch4kr4_Vyuh}** 
 
@@ -488,13 +487,12 @@ Facing the porch through which you would come out.
 ```
 The poem that author give to player.
 As the name of the challenge we use **stegsnow** tool.
-![image](https://hackmd.io/_uploads/Hk1clqK9Jl.png)
-![image](https://hackmd.io/_uploads/S1EcgqKqJg.png)
+![image](https://hackmd.io/_uploads/HkCK_Zi51e.png)
+![image](https://hackmd.io/_uploads/ByW9dZjqke.png)
 The password is his friend's name: Aakash
 Then we get: https://pastebin.com/HVQfa14Z
-![image](https://hackmd.io/_uploads/r1z1Z5t5Jl.png)
 This is cow descript
-![image](https://hackmd.io/_uploads/HyombqKqJg.png)
+![image](https://hackmd.io/_uploads/S1Uj_bscJl.png)
 **Flag: KashiCTF{Love_Hurts_5734b5f}**
 
 ## Broken ?
