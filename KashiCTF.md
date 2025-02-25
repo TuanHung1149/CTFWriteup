@@ -255,7 +255,7 @@ s://hackmd.io/_uploads/Sy7VUg951g.png)
 
 Download it then open it in Audacity
 ![image](https://hackmd.io/_uploads/rJU7ubj9yg.png)
-**KashiCTF{1t_Wa5_Ju5t_4_Tutori4l_RIP}**
+**Flag: KashiCTF{1t_Wa5_Ju5t_4_Tutori4l_RIP}**
 # Pwn	
 
 ## leap_of_faith
