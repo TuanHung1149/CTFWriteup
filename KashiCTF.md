@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4c662c0d-54e0-48c5-b3fb-81a19b9589d4)# KashiCTF
+# KashiCTF
 ![image](https://github.com/user-attachments/assets/898f2074-6f7e-430e-a657-77bb7821e4e9)
 ## 📜 List CTF Challenge
 
@@ -42,6 +42,7 @@ And you can see the word "Very American experience" is a hint of the challs so i
 ### Kings
 At first i found that's the Tutankhamun's meteoric iron dagger and that's kinda not related. Then i think about popular the extinct bird that's dodo bird. I actually found 2 artist that draw dodo bird that's Ustad Mansur and Roelant Savery(already try but failed)
 But it's actually more match with Ustad Mansur information when he was in the Mughal Empire, which has a nice dagger(nice). Then the research take me to the wikiart site which actually his dodo painting(https://www.wikiart.org/en/ustad-mansur/untitled-dodo-1625) and that's currently located in Hermitage Museum, Saint Petersburg, Russia.
+![image](https://github.com/user-attachments/assets/4c662c0d-54e0-48c5-b3fb-81a19b9589d4)
 ![image](https://github.com/user-attachments/assets/572ab7c2-0be7-4cde-9e43-c10eafa7ce2a)
 And after osint in some video on youtube, using google map and brute the coordinates, i got the flag.
 **Flag: KashiCTF{59.9399_30.3149}**
