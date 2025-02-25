@@ -61,7 +61,6 @@ Based on the challenge hint: "Every image tells a story, but some stories are me
 ### Corruption
 The file given is a corrupted file so i use HxD to read it
 Use search tool you can find the real flag is the second one
-![image](https://hackmd.io/_uploads/Hy9bIbjckg.png)
 ![image](https://hackmd.io/_uploads/SJVf8Wj5yx.png)
 **Flag: KashiCTF{FSCK_mE_B1T_by_b1t_Byt3_by_byT3}**
 ### Restaurant
