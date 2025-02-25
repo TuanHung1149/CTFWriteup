@@ -261,8 +261,8 @@ Download it then open it in Audacity
 ## leap_of_faith
 
 ![image](https://hackmd.io/_uploads/rkLqDbsqyl.png)
-
 ![image](https://hackmd.io/_uploads/rykjvWoqke.png)
+
 What if we jump to main+1 many time? Is rsp will be subtracted? I realized that we can control **rsp**.
 Following this flow, I just brute force with luck and it was right 
 ```python3 
@@ -282,6 +282,7 @@ p.sendlineafter(b': ', b'0x4011ba')
 
 p.interactive()
 ```
+**Flag: KashiCTF{m4r10_15_fu_w17H_C_qjHbCVGz}**
 
 ## The Troll Zone
 
@@ -291,6 +292,7 @@ Checksec of the challenge
 
 
 After brute force dump value from the stack then i found the 17th value from the stack is the address of any function in libc
+
 ![image](https://hackmd.io/_uploads/HJk5BF_q1g.png)
 So we can leak libc -> rop chain and call system("/bin/sh")
 
